@@ -194,12 +194,12 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
     - name: Download Build Receipt
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: current-build-receipt
 
     - name: Download Run Receipt
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: current-run-receipt
 
@@ -358,13 +358,13 @@ jobs:
         mkdir -p build
 
     - name: Download Build Image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: current-build-image
         path: build
 
     - name: Download Run Image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: current-run-image
         path: build
@@ -402,22 +402,22 @@ jobs:
         fetch-depth: 0  # gets full history
 
     - name: Download current build image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: current-build-image
 
     - name: Download current run image
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: current-run-image
 
     - name: Download Build Receipt
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: current-build-receipt
 
     - name: Download Run Receipt
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: current-run-receipt
 
